@@ -5,7 +5,27 @@
   </head>
     <body style="background-color:#7ec0ee;">
       <h1 style="text-align:center;">3D Designing</h1>
-      <p style="text-align:center;"><img src="Chain link picture.PNG"/></p>
+      <p style="text-align:center;">
+      <slideshow>
+      <img class="mySlides" src="Chainlink picture.PNG" width="600" height="400">
+      <img class="mySlides" src="3D design sofware.PNG" width="600" height="400">
+      <img class="mySlides" src="3D design. space ship.PNG" width="600" height="400">
+    </slideshow>
+    <script>
+                              var myIndex = 0;
+                              carousel();
+                              function carousel() {
+                                    var i;
+                                    var x = document.getElementsByClassName("mySlides");
+                                    for (i = 0; i < x.length; i++) {
+                                          x[i].style.display = "none";  
+                                    }
+                                    myIndex++;
+                                    if (myIndex > x.length) {myIndex = 1}    
+                                    x[myIndex-1].style.display = "block";  
+                                    setTimeout(carousel, 4000); // Change image every 2 seconds
+                              }
+                        </script>
       <p style="font-size:25px;"  "border:1px;" "black padding:30px;>For these past couple weeks, we have been working on 3D designs.
       I have been presonally using autodesk inventor for all my 3D designing. I created a 3D printable chain link for my major assignment
       in my class. In the few weeks we spent learning how to make 3D designs I learned how to use many of the features of autodesk inventor
